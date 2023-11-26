@@ -25,7 +25,7 @@ const UserSchema = new mongoose.Schema({
         
     },
 
-    tanggal_lahir_siswa: {
+    lahir_siswa: {
         type: String,
         required: [true, 'Silahkan Isikan Tanggal Lahir'],
         

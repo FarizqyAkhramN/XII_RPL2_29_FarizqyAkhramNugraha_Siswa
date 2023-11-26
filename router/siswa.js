@@ -3,13 +3,13 @@ const router = express.Router()
 
 const usercontroller = require('../controllers/siswa')
 
-router.get('/siswa', usercontroller.index)
+router.get('/semuasiswa', usercontroller.index)
 router.get('/siswa/:id', usercontroller.show)
 
-  router.post('/siswa', usercontroller.store)
+  router.post('/tambahsiswa', usercontroller.store)
   
-  router.put('/siswa/:id', usercontroller.update)
+  router.put('/mengubahsiswa/:id', usercontroller.update)
   
-  router.delete('/siswa/:id', usercontroller.delete)
+  router.delete('/menghapussiswa/:id', usercontroller.delete)
 
   module.exports = router
